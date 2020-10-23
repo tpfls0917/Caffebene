@@ -1,0 +1,36 @@
+/* sub.css */
+
+/* 
+    #main영역 header
+    타이틀 영역: 1200 x 330
+*/
+#main {
+    width: 1200px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+#main > header {
+    position: relative;
+    height: 330px;
+    background: url(../images/sub_banner01.jpg);
+}
+#main > header > h2 {
+    color: #fff;
+    position: relative;
+    top: 133px;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* lnb 영역 */
+#lnb {
+    /* position: relative; */
+    background: #abc;
+    /* 수평 중앙 정렬 */
+    /* left: 50%; */
+}
+#lnb ul li {
+    display: inline-block;
+    height: 60px;
+    
+}

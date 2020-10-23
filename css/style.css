@@ -1,0 +1,327 @@
+/* style.css */
+/*
+    페이지 폭: 1200px
+    서체: Noto Sans KR
+    글자색상: #203053
+    메뉴 텍스트 굵기: 500
+    메인 컬러: #203053
+    서브컬러: #008392
+*/
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+li { list-style: none; }
+a {
+    text-decoration: none;
+    color: #203053;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 16px;
+    color: #203053;
+}
+
+/* header */
+#main_header {
+    width: 1200px; height: 140px;
+    /* background: #ccc; */
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid #203053;
+    position: relative;
+}
+#main_header > h1 {
+    position: relative;
+    top: 20px;
+}
+#main_header > p, #main_header > p > a {
+    color: #666;
+}
+#main_header > p {
+    position: absolute;
+    right: 10px;
+}
+#main_header > p > a.click {
+    color: #203053;
+}
+
+/* gnb */
+#gnb {
+    width: 1200px; height: 30px;
+    /* background: #abc; */
+    margin: 0 auto;
+    position: relative;
+}
+
+#gnb > .depth1 {
+    position: absolute;
+    z-index: 999;
+}
+#gnb > .depth1 > li {
+    float: left;
+    width: calc(1200px / 6);
+    text-align: center;
+    /* outline: 1px solid red; */
+}
+#gnb > .depth1 > li > a {
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    font-weight: 500;
+}
+#gnb > .depth1 > li > a:hover {
+    background: #203053;
+    color: #fff;
+}
+
+/* 2edpth menu */
+#gnb .depth2 {
+    background: rgba(200, 200, 200, 0.85);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 195px;
+    display: none;
+}
+#gnb .depth2 > li {
+    margin-bottom: 10px;
+}
+#gnb .depth2 > li > a:hover {
+    color: #008392;
+    font-weight: 700;
+}
+
+/* 메인 비주얼 */
+section#visual {
+    /* outline: 2px solid red; */
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+/* bxslider 테두리 제거 */
+.bx-wrapper { border: none; }
+
+/* 섹션 공통 제목 스타일 */
+section {
+    text-align: center;
+}
+section h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #008392;
+    text-transform: uppercase;
+}
+
+/* Choice */
+#choice {
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+    padding-bottom: 90px;
+}
+#choice > .choice2 {
+    padding: 0 60px;
+}
+#choice > .choice2 > li {
+    float: left;
+    width: calc(1080px / 4);
+}
+
+/* Pick */
+#pick {
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: 2px solid green; */
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 130px;
+}
+#pick > .pick2 > li {
+    float: left;
+    width: 25%;
+}
+
+.pager {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pager > a {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+.pager > a.active {
+    background: #203053;
+}
+
+/* 2번째 배너 */
+#info {
+    width: 1200px;
+    height: 360px;
+    margin: 0 auto;
+    background-image: url(../images/second_banner.jpg);
+    margin-bottom: 50px;
+}
+#info > div {
+    position: relative;
+    left: 100px;
+    top: 260px;
+}
+#info > div > a {
+    float: left;
+    width: 160px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    color: #008392;
+    border: 1px solid #008392;
+}
+#info > div > a:first-child {
+    margin-right: 20px;
+}
+
+/* news */
+#news {
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+    overflow: hidden;
+}
+#news > aside > div {
+    float: left;
+}
+#news > aside > .store_search {
+    width: 290px;
+    height: 290px;
+    background-image: url(../images/store_find.jpg);
+}
+#news > aside > .store_search > form {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    border: 1px solid #fff;
+    top: 190px;
+    left: 30px;
+}
+#news > aside,
+#news > article {
+    width: 50%;
+    height: 290px;
+    float: left;
+    /* outline: 2px solid green; */
+    /* background: #ccc; */
+    margin-bottom: 50px;
+}
+#news > article > h3 {
+    padding: 15px;
+    text-align: left;
+}
+#news > article {
+    padding: 30px;
+}
+.search,
+.btn {
+  background: none;
+  color: #fff;
+  border: none;
+}
+.search {
+    position: relative;
+    top: 5px;
+    border: none;
+    outline: none;
+}
+.btn {
+    position: relative;
+    top: 12px;
+}
+::placeholder {
+    color: #fff;
+}
+
+/* article 뉴스 기사 목록 */
+#news > article > .list {
+    border-top: 2px solid #203053;
+    border-bottom: 2px solid #203053;
+    width: 540px;
+}
+#news > article > .list > li {
+    overflow: hidden;
+    padding: 15px;
+    font-weight: 300;
+}
+#news > article > .list > li:first-child,
+#news > article > .list > li:nth-child(2) {
+    border-bottom: 1px solid #203053;
+}
+#news > article > .list > li > a { float: left; }
+#news > article > .list > li > span { float: right; }
+
+/* sns */
+
+/* 메인 푸터 */
+#main_footer {
+    width: 1200px;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+/* 푸터 탑 */
+#main_footer > .footer_top {
+    border-bottom: 3px solid #203053;
+    overflow: hidden;
+}
+#main_footer > .footer_top > .footer_menu > li {
+    float: left;
+    padding: 40px;
+    font-weight: 600;
+    padding-top: 0;
+}
+#main_footer > .footer_top > .footer_menu > li:first-child {
+    padding-left: 0;
+}
+#main_footer > .footer_top > .footer_menu > li > a.accent {
+    color: #008392;
+}
+#main_footer > .footer_top > .footer_menu > li.num {
+    float: right;
+    padding-right: 0;
+    font-size: 18px;
+}
+
+/* 푸터 바텀 */
+#main_footer > .footer_bottom {
+    margin-top: 30px;
+    /* overflow: hidden; */
+}
+#main_footer > .footer_bottom > .footer_logo {
+    width: 150px;
+    float: left;
+}
+#main_footer > .footer_bottom > .footer_info1 {
+    float: left;
+    background: #abc;
+}
+#main_footer > .footer_bottom > .footer_info2 {
+    background: #666;
+}
+#main_footer > .footer_bottom > .footer_info1,
+#main_footer > .footer_bottom > .footer_info2 {
+    padding-left: 30px;
+    
+}
+#main_footer > .footer_bottom > .footer_sns {
+    clear: both;
+}
