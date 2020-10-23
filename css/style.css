@@ -275,7 +275,8 @@ section h2 {
 #main_footer {
     width: 1200px;
     margin: 0 auto;
-    background: #ccc;
+    /* background: #abc; */
+    overflow: hidden;
 }
 
 /* 푸터 탑 */
@@ -304,24 +305,41 @@ section h2 {
 /* 푸터 바텀 */
 #main_footer > .footer_bottom {
     margin-top: 30px;
-    /* overflow: hidden; */
+    padding-bottom: 20px;
+    overflow: hidden;
 }
 #main_footer > .footer_bottom > .footer_logo {
     width: 150px;
     float: left;
 }
-#main_footer > .footer_bottom > .footer_info1 {
-    float: left;
-    background: #abc;
-}
-#main_footer > .footer_bottom > .footer_info2 {
-    background: #666;
-}
 #main_footer > .footer_bottom > .footer_info1,
 #main_footer > .footer_bottom > .footer_info2 {
-    padding-left: 30px;
-    
+    float: left;
+    /* background: #abc; */
+    padding: 0 40px;
+}
+#main_footer > .footer_bottom > .footer_info1 > li,
+#main_footer > .footer_bottom > .footer_info2 > li {
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+#main_footer > .footer_bottom > .footer_info1 > li address {
+    font-style: normal;
+}
+#main_footer > .footer_bottom > .footer_info1 > .copy {
+    color: #8A8A8A;
+    padding-top: 15px;
 }
 #main_footer > .footer_bottom > .footer_sns {
-    clear: both;
+    float: right;
+    display: block;
+}
+#main_footer > .footer_bottom > .footer_sns > li {
+    display: inline-block;
+    padding-left: 22px;
+}
+#main_footer > .footer_bottom > .footer_sns > li > a > img {
+    width: 30px;
 }
