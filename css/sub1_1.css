@@ -119,6 +119,7 @@
 #sub_main_contents > .sub_content_1_3 {
     padding-bottom: 210px;
     text-align: center;
+    color: #000;
     /* background: #aac; */
 }
 #sub_main_contents > .sub_content_1_3 div p {
@@ -128,6 +129,7 @@
     font-size: 25px;
     font-weight: 500;
     margin-top: 100px;
+    color: #203053;
 }
 #sub_main_contents > .sub_content_1_3 > .sub_bottom2 {
     padding-top: 50px;
