@@ -36,7 +36,7 @@
     display: block;
     clear: both;
 }
-#lnb ul li {
+#lnb ul li a {
     float: left;
     width: 400px;
     height: 60px;
