@@ -181,13 +181,13 @@ section h2 {
     background-image: url(../images/second_banner.jpg);
     background-size: cover;
     margin-bottom: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #info > div {
     position: absolute;
     left: 100px;
     top: 260px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 #info > div > a {
     float: left;
