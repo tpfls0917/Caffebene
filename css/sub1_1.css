@@ -4,15 +4,17 @@
     #main영역 header
     타이틀 영역: 1200 x 330
 */
-#main {
-    width: 1200px;
-    margin: 0 auto;
-    /* outline: 2px solid red; */
-}
+/* #main {
+    outline: 2px solid red;
+} */
 #main > header {
-    position: relative;
+    /* position: relative; */
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1200px;
     height: 330px;
     background: url(../images/sub_banner01.jpg);
+    background-position: center;
 }
 #main > header > h2 {
     color: #fff;
@@ -26,6 +28,7 @@
 /* lnb 영역 */
 #lnb {
     width: 1200px;
+    margin: 0 auto;
     /* background: #abc; */
 }
 #lnb::after{
@@ -46,6 +49,8 @@
 /* breadcrumb */
 #main > .location {
     /* background: #ccc; */
+    width: 1200px;
+    margin: 0 auto;
     text-align: right;
     text-transform: uppercase;
     font-size: 12px;

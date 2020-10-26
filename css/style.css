@@ -174,16 +174,20 @@ section h2 {
 
 /* 2번째 배너 */
 #info {
+    position: relative;
     width: 1200px;
     height: 360px;
     margin: 0 auto;
     background-image: url(../images/second_banner.jpg);
+    background-size: cover;
     margin-bottom: 50px;
+    border: 1px solid red;
 }
 #info > div {
-    position: relative;
+    position: absolute;
     left: 100px;
     top: 260px;
+    border: 1px solid blue;
 }
 #info > div > a {
     float: left;
